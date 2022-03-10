@@ -1,0 +1,9 @@
+:root {
+  --tittle-font: 'Poppins', sans-serif;
+  --paragraphy-font: 'Roboto', sans-serif;
+  --normal-font-size: 1rem;
+
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+}
