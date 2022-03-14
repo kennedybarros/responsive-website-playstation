@@ -6,7 +6,6 @@
 
 .bd-container {
   max-width: 1100px;
-  width: calc(100% - 2rem);
   margin-left: 2rem;
   margin-right: 2rem;
 }
@@ -14,13 +13,4 @@
 .bd-grid {
   display: grid;
   gap: 1.5rem;
-}
-
-.l-header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  background-color: var(--body-color);
 }

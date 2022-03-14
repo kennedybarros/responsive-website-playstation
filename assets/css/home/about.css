@@ -36,7 +36,6 @@
   font-family: var(--paragraphy-font);
   color: var(--paragraphy-color-light);
   font-weight: var(--font-regular);
-  color: var(--paragraphy-color-light);
   max-width: 44ch;
 }
 
