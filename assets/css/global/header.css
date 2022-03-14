@@ -48,6 +48,10 @@
   cursor: pointer;
 }
 
+.change-theme:hover {
+  color: var(--title-color);
+}
+
 .nav_btns {
   display: inline-flex;
   align-items: center;

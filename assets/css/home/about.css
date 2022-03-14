@@ -1,5 +1,5 @@
 .about_container {
-  margin-top: 80px;
+  margin-top: 100px;
   margin-left: 1rem;
   margin-right: 1rem;
   align-content: center;
@@ -37,7 +37,7 @@
   color: var(--paragraphy-color-light);
   font-weight: var(--font-regular);
   color: var(--paragraphy-color-light);
-  max-width: 35ch;
+  max-width: 44ch;
 }
 
 .about_list {
@@ -82,16 +82,6 @@
 
 .button:hover {
   background-color: #261e7d;
-}
-
-.button_2 {
-  display: inline-block;
-  margin-left: 30px;
-  font-family: var(--tittle-font);
-  font-weight: var(--font-medium);
-  font-size: var(--normal-font-size);
-  color: var(--paragraphy-color-light);
-  transition: 0.5s;
 }
 
 .about_arrow {

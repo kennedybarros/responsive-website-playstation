@@ -37,7 +37,7 @@
   font-family: var(--paragraphy-font);
   font-weight: var(--font-regular);
   color: var(--paragraphy-color-light);
-  max-width: 35ch;
+  max-width: 44ch;
 }
 
 .home_img {
@@ -84,9 +84,9 @@
 .home_emp {
   margin-top: 70px;
   display: grid;
-  grid-template-columns: 70px 70px;
+  grid-template-columns: 1fr 1fr;
   gap: 40px 90px;
-  justify-content: center;
+  justify-items: center;
 }
 
 @media screen and (min-width: 767px) {
@@ -105,8 +105,10 @@
   .home_emp {
     justify-content: left;
   }
-  .button_2 {
-    margin-left: 30px;
+  .home_emp {
+    display: grid;
+    grid-template-columns: 70px 70px;
+    gap: 40px 90px;
   }
 }
 
