@@ -37,13 +37,13 @@
 .functions_list_container {
   display: flex;
   gap: 57px;
-  padding: 40px 123px 40px 150px;
+  padding: 40px 50px 40px 50px;
   overflow: auto;
 }
 
 .functions_list {
   display: grid;
-  padding: 51px 72px 43px 72px;
+  padding: 31px 42px 31px 42px;
   background: rgba(164, 164, 164, 0.1);
   border: 1px solid #cccccc;
   backdrop-filter: blur(56px);
@@ -79,6 +79,9 @@
   .functions_list_container {
     overflow: hidden;
     padding: 40px 123px 40px 123px;
+  }
+  .functions_list {
+    padding: 51px 72px 43px 72px;
   }
 
   .functions_img {
