@@ -1,0 +1,140 @@
+.faqs_container {
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  background: rgba(164, 164, 164, 0.05);
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+  backdrop-filter: blur(56px);
+  border-radius: 25px;
+  padding: 30px 25px 30px 25px;
+}
+
+.faqs_title {
+  color: var(--title-color);
+  font-family: var(--tittle-font);
+  font-weight: var(--font-semi-bold);
+  font-size: var(--title-font-size);
+}
+
+.faqs_title_2 {
+  color: var(--primary-color);
+}
+
+.faqs_subtitle {
+  margin-top: 180px;
+  font-family: var(--paragraphy-font);
+  font-weight: 500;
+  font-size: var(--small-font-size);
+  color: #727382;
+}
+
+.faqs_subtitle_2 {
+  margin-top: 15px;
+  margin-bottom: 44px;
+  font-size: var(--normal-font-size);
+  font-family: var(--paragraphy-font);
+  font-weight: var(--font-regular);
+  color: var(--paragraphy-color-light);
+}
+
+.faqs_group {
+  display: grid;
+  gap: 9px;
+}
+
+.faqs_item-title {
+  font-family: var(--tittle-font);
+  font-weight: 600;
+  font-size: 12px;
+  color: #5a5a5a;
+}
+
+.faqs_icon {
+  font-size: 1.5rem;
+  color: #a4a4a4;
+  margin-right: 20px;
+}
+
+.marginn {
+  margin-top: 15px;
+}
+
+.faqs_description {
+  font-family: var(--paragraphy-font);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.013em;
+  color: #5a5a5a;
+  box-sizing: border-box;
+}
+
+.faqs_header {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  cursor: pointer;
+  justify-content: space-between;
+  border-top: 1px solid #cccccc;
+}
+
+.sombrinha {
+  border-bottom: 1px solid #cccccc;
+}
+
+.faqs_content {
+  overflow: hidden;
+  height: 0;
+}
+
+.faqs_item,
+.faqs_header,
+.faqs_item-title,
+.faqs_icon,
+.faqs_description,
+.faqs_content {
+  transition: 0.3s;
+}
+
+.accordion-open .faqs_icon {
+  transform: rotate(45deg);
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .product__container {
+    grid-template-columns: 0.6fr;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .steps__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .faqs_container {
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .faqs_container {
+    padding: 40px 70px 40px 70px;
+  }
+  .faqs_item-title {
+    font-size: 16px;
+  }
+  .faqs_description {
+    font-size: 15px;
+    padding: 0 3.5rem 2.25rem 2.75rem;
+  }
+}
