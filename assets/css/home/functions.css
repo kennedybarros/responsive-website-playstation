@@ -70,9 +70,6 @@
 }
 
 @media screen and (min-width: 767px) {
-  .functions_container {
-    height: 85vh;
-  }
   .functions_data {
     max-width: 1110px;
   }
