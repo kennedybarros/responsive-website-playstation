@@ -124,6 +124,12 @@
   .faqs_container {
     align-items: flex-start;
   }
+  .faqs_header {
+    border-top: 2px solid #cccccc;
+  }
+  .sombrinha {
+    border-bottom: 2px solid #cccccc;
+  }
 }
 
 @media screen and (min-width: 992px) {

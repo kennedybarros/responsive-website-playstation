@@ -122,6 +122,7 @@
   .produts_list_container {
     overflow-x: hidden;
     overflow: hidden;
+    height: 390px;
   }
   .produts_data {
     max-width: 973px;
@@ -134,6 +135,12 @@
     top: -61px;
     left: -28px;
     max-width: 569px;
+  }
+  .produts_buy_img {
+    top: -24px;
+  }
+  .produts_button {
+    top: -12px;
   }
 }
 

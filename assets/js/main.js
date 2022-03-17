@@ -24,7 +24,7 @@ function linkAction() {
 }
 navLink.forEach((n) => n.addEventListener('click', linkAction));
 
-/*=============== QUESTIONS ACCORDION ===============*/
+// FAQS
 const accordionItems = document.querySelectorAll('.faqs_item');
 
 accordionItems.forEach((item) => {
