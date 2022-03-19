@@ -12,7 +12,7 @@
   font-size: var(--big-font-size);
   color: var(--title-color);
   position: relative;
-  margin-top: 35px;
+  margin-top: 2.1875rem;
 }
 
 .home_title::before {
@@ -21,28 +21,33 @@
   width: 144px;
   height: 144px;
   background: url('../../img/decoration/circle.svg') no-repeat;
-  top: -25px;
-  left: -70px;
+  top: -1.5625rem;
+  left: -4.375rem;
   z-index: -1;
 }
 
-.home_title_2 {
+.home_title-secondary {
   color: var(--primary-color);
 }
 
 .home_subtitle {
-  margin-bottom: 35px;
-  margin-top: 15px;
+  margin-bottom: 2.1875rem;
+  margin-top: 0.9375rem;
   font-size: var(--normal-font-size);
   font-family: var(--paragraphy-font);
   font-weight: var(--font-regular);
   color: var(--paragraphy-color-light);
-  max-width: 44ch;
 }
 
 .home_img {
   justify-self: center;
   display: none;
+}
+
+.home_buttons {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
 }
 
 .button {
@@ -58,12 +63,11 @@
 }
 
 .button:hover {
-  background-color: #261e7d;
+  background-color: var(--primary-color-hover);
 }
 
-.button_2 {
+.button_secondary {
   display: inline-block;
-  margin-left: 30px;
   font-family: var(--tittle-font);
   font-weight: var(--font-medium);
   font-size: var(--normal-font-size);
@@ -71,22 +75,36 @@
   transition: 0.5s;
 }
 
-.home_arrow {
+.button_secondary:hover .button_icon {
+  transform: translateX(0.35rem);
+}
+
+.button_icon {
   vertical-align: sub;
   font-size: 1.5rem;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
-.home_arrow:hover {
-  margin-left: 10px;
-}
-
-.home_emp {
-  margin-top: 70px;
+.home_company {
+  margin-top: 4.375rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px 90px;
+  gap: 2.5rem 5.625rem;
   justify-items: center;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 320px) {
+  .home_img {
+    height: 200px;
+  }
+  .home_buttons {
+    flex-direction: column;
+    width: max-content;
+    row-gap: 1rem;
+    gap: 1.25rem;
+    align-items: baseline;
+  }
 }
 
 @media screen and (min-width: 767px) {
@@ -95,29 +113,30 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
-
   .home_img {
     display: block;
   }
   .home_title::before {
-    top: -65px;
+    top: -4.0625rem;
   }
-  .home_emp {
+  .home_subtitle {
+    max-width: 44ch;
+  }
+  .home_buttons {
+    gap: 3.125rem;
+  }
+  .home_company {
     justify-content: left;
   }
-  .home_emp {
+  .home_company {
     display: grid;
     grid-template-columns: 70px 70px;
-    gap: 40px 90px;
+    gap: 2.5rem 5.625rem;
   }
 }
 
-@media screen and (min-width: 1110px) {
-  .bd-container {
-    margin-left: auto;
-    margin-right: auto;
-  }
+@media screen and (min-width: 1200px) {
   .home_title {
-    margin-top: 115px;
+    margin-top: 7.1875rem;
   }
 }

@@ -1,16 +1,64 @@
+:root {
+  --header-height: 3.5rem;
+  --mb-1: 1rem;
+  --z-fixed: 100;
+}
+
 .container {
-  max-width: 1110px;
+  max-width: 968px;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
 
 .bd-container {
-  max-width: 1100px;
+  max-width: 968px;
   margin-left: 2rem;
   margin-right: 2rem;
+}
+
+.grid {
+  display: grid;
 }
 
 .bd-grid {
   display: grid;
   gap: 1.5rem;
+}
+
+.section {
+  padding: 4.5rem 0 2rem;
+}
+
+.main {
+  overflow: hidden; /*For animation*/
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+}
+
+@media screen and (min-width: 767px) {
+  body {
+    margin: 0;
+  }
+  .section {
+    padding: 7rem 0 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .bd-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

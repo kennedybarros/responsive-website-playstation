@@ -1,8 +1,17 @@
 :root {
   --primary-color: #362ba9;
+  --primary-color-hover: #261e7d;
   --title-color: #0e0e0e;
+  --title-color-secondary: #000000;
   --text-color: #8d8ea0;
   --paragraphy-color-light: #727382;
   --body-color: #ffffff;
   --white-color: #ffffff;
+  --gray-color: #cccccc;
+  --gray-color-secondary: #a4a4a4;
+  --gray-color-third: #5a5a5a;
+  --gray-color-fourth: #9f9cb1;
+  --background-gray: rgba(164, 164, 164, 0.05);
+  --background-gray-secondary: rgba(164, 164, 164, 0.1);
+  --background-gray-third: rgba(164, 164, 164, 0.15);
 }

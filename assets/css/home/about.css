@@ -1,8 +1,9 @@
 .about_container {
-  margin-top: 100px;
   margin-left: 1rem;
   margin-right: 1rem;
+  margin-top: 6.25rem;
   align-content: center;
+  align-items: center;
   justify-content: center;
 }
 
@@ -20,31 +21,30 @@
   width: 180px;
   height: 180px;
   background: url('../../img/decoration/x.svg') no-repeat;
-  left: 130px;
-  top: -80px;
+  left: 8.125rem;
+  top: -5rem;
   z-index: -1;
 }
 
-.about_title_2 {
+.about_title-secondary {
   color: var(--primary-color);
 }
 
 .about_subtitle {
-  margin-bottom: 40px;
-  margin-top: 30px;
+  margin-bottom: 2.5rem;
+  margin-top: 1.875rem;
   font-size: var(--normal-font-size);
   font-family: var(--paragraphy-font);
   color: var(--paragraphy-color-light);
   font-weight: var(--font-regular);
-  max-width: 44ch;
 }
 
 .about_list {
   display: flex;
   flex-direction: column;
   position: relative;
-  gap: 15px;
-  margin-bottom: 50px;
+  gap: 0.9375rem;
+  margin-bottom: 3.125rem;
   justify-content: center;
   color: var(--paragraphy-color-light);
   font-family: var(--tittle-font);
@@ -57,9 +57,9 @@
   display: inline-block;
   width: 20px;
   height: 3px;
-  border-radius: 5px;
-  margin-bottom: 4px;
-  margin-right: 15px;
+  border-radius: 0.3125rem;
+  margin-bottom: 0.25rem;
+  margin-right: 0.9375rem;
   background-color: var(--primary-color);
 }
 
@@ -80,50 +80,36 @@
 }
 
 .button:hover {
-  background-color: #261e7d;
+  background-color: var(--primary-color-hover);
 }
 
-.about_arrow {
+.about_icon {
   vertical-align: sub;
   font-size: 1.5rem;
   transition: 0.5s;
 }
 
-.about_arrow:hover {
-  margin-left: 10px;
+.button:hover .about_icon {
+  transform: translateX(0.35rem);
 }
 
+/* MEDIA QUERIES */
 @media screen and (min-width: 767px) {
   .about_container {
-    height: 100vh;
     grid-template-columns: repeat(2, 1fr);
   }
-
   .about_img {
     display: block;
-  }
-  .about_title::before {
-    top: -65px;
-  }
-  .button_2 {
-    margin-left: 30px;
   }
   .about_data {
     justify-self: end;
     align-self: center;
   }
   .about_title:before {
-    top: -100px;
-    left: 270px;
+    top: -6.25rem;
+    left: 16.875rem;
   }
   .about_subtitle {
     max-width: 47ch;
-  }
-}
-
-@media screen and (min-width: 1110px) {
-  .bd-container {
-    margin-left: auto;
-    margin-right: auto;
   }
 }

@@ -1,14 +1,9 @@
 .produts_container {
-  margin-top: 100px;
+  margin-top: 6.25rem;
   justify-content: center;
 }
 
-.produts_data {
-  max-width: 340px;
-}
-
 .produts_title {
-  margin-top: 40px;
   text-align: center;
   color: var(--title-color);
   font-family: var(--tittle-font);
@@ -23,128 +18,143 @@
   position: absolute;
   width: 200px;
   height: 200px;
-  top: -30px;
-  left: -60px;
+  top: -1.875rem;
+  left: -3.75rem;
   background-image: url('../../img/decoration/rectangle.svg');
 }
 
-.produts_title_2 {
+.produts_title-2 {
   color: var(--primary-color);
 }
 
 .produts_subtitle {
   text-align: center;
-  margin-bottom: 50px;
+  margin-top: 1.25rem;
+  margin-bottom: 3.75rem;
   font-size: var(--normal-font-size);
   font-family: var(--paragraphy-font);
   font-weight: var(--font-regular);
   color: var(--paragraphy-color-light);
 }
 
-.produts_list_container {
-  display: flex;
-  gap: 60px;
-  overflow-x: auto;
-  height: 370px;
+.produts_list-container {
+  display: grid;
+  grid-template-columns: 250px;
+  gap: 1.25rem;
+  justify-content: center;
 }
 
 .produts_list {
-  background: rgba(164, 164, 164, 0.15);
-  border: 1px solid #cccccc;
+  background: var(--background-gray-third);
+  border: 1px solid var(--gray-color);
   box-sizing: border-box;
-  backdrop-filter: blur(56px);
   border-radius: 25px;
-  max-width: 231px;
-  height: 305px;
+  position: relative;
 }
 
 .produts_img {
-  top: -61px;
-  left: -21px;
-  max-width: 269px;
   position: relative;
+  max-width: 180px;
+  left: 2.5rem;
+  transition: 0.3s;
 }
 
-.produts_list_title {
+.product_circle {
+  width: 120px;
+  height: 120px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  top: 11%;
+  left: 25%;
+}
+
+.produts_list-title {
   font-family: var(--tittle-font);
-  font-weight: 600;
-  font-size: 16px;
-  margin-left: 32px;
+  font-weight: var(--font-semi-bold);
+  font-size: var(--normal-font-siz);
+  margin-left: 2rem;
   color: var(--title-color);
-  position: relative;
-  top: -120px;
 }
 
 .produts_evaluation {
   display: flex;
   gap: 0px;
-  margin-top: 10px;
-  margin-left: 29px;
-  top: -120px;
-  position: relative;
+  margin-top: 0.625rem;
+  margin-left: 1.8125rem;
 }
 
-.produts_evaluation_title {
-  margin-left: 5px;
+.produts_evaluation-title {
+  margin-left: 0.3125rem;
 }
 
 .produts_value {
-  margin-left: 32px;
-  font-family: var(--tittle-font);
-  font-weight: 600;
-  font-size: 16px;
-  color: var(--paragraphy-color-light);
   position: relative;
-  top: -100px;
+  margin-left: 2rem;
+  top: 1.875rem;
+  font-family: var(--tittle-font);
+  font-weight: var(--font-semi-bold);
+  font-size: var(--normal-font-size);
+  color: var(--paragraphy-color-light);
 }
 
 .produts_buy {
   display: flex;
   flex-flow: row-reverse;
-  position: relative;
-  top: -94px;
-}
-
-.produts_buy_img {
-  position: relative;
-  top: -29px;
 }
 
 .produts_button {
-  position: relative;
-  left: 53px;
-  top: -16px;
-  font-size: 38px;
+  font-size: 2.375rem;
   color: var(--white-color);
+  position: relative;
+  left: 3.25rem;
+  top: 0.625rem;
 }
 
-@media screen and (min-width: 767px) {
-  .produts_list_container {
-    overflow-x: hidden;
-    overflow: hidden;
-    height: 390px;
+.produts_list:hover .produts_img {
+  transform: translateY(-0.8rem);
+}
+
+/* MEDIAS QUERIES */
+@media screen and (max-width: 320px) {
+  .produts_list-container {
+    grid-template-columns: 1fr;
   }
-  .produts_data {
-    max-width: 973px;
+}
+
+@media screen and (min-width: 576px) {
+  .produts_list-container {
+    grid-template-columns: repeat(2, 250px);
+    gap: 3.75rem;
   }
-  .produts_list {
-    max-width: 270px;
-    height: 375px;
+  .product_circle {
+    top: 13%;
+    left: 24%;
   }
   .produts_img {
-    top: -61px;
-    left: -28px;
-    max-width: 569px;
-  }
-  .produts_buy_img {
-    top: -24px;
-  }
-  .produts_button {
-    top: -12px;
+    left: 2.125rem;
   }
 }
 
-@media screen and (min-width: 1110px) {
+@media screen and (min-width: 860px) {
+  .produts_list-container {
+    grid-template-columns: repeat(3, 250px);
+    gap: 3.75rem;
+  }
+  .produts_img {
+    max-width: 230px;
+    left: 0.75rem;
+  }
+  .product_circle {
+    width: 150px;
+    height: 160px;
+    top: 15%;
+    left: 18%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .bd-container {
     margin-left: auto;
     margin-right: auto;

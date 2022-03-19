@@ -66,25 +66,25 @@
     <header class="header" id="header">
       <nav class="nav container">
         <div class="nav_box">
-          <img src="./assets/img/logo.svg" alt="" />
+          <img src="./assets/img/logo.svg" alt="PlaySation Logo" />
           <a href="#" class="nav_logo"> PlayStation </a>
         </div>
         <div class="nav_menu" id="nav-menu">
           <ul class="nav_list">
             <li class="nav_item">
-              <a href="#home" class="nav_link active-link">Home</a>
+              <a href="#home" class="nav_link">Home</a>
             </li>
             <li class="nav_item">
-              <a href="#about" class="nav_link">About</a>
+              <a href="#" class="nav_link">About</a>
             </li>
             <li class="nav_item">
-              <a href="#products" class="nav_link">Products</a>
+              <a href="#" class="nav_link">Products</a>
             </li>
             <li class="nav_item">
               <a href="#faqs" class="nav_link">FAQs</a>
             </li>
             <li class="nav_item">
-              <a href="#contact" class="nav_link">Contact</a>
+              <a href="#" class="nav_link">Contact</a>
             </li>
           </ul>
 
@@ -102,31 +102,38 @@
       </nav>
     </header>
     <!-- MAIN -->
-    <main class="-lmain">
+    <main class="main">
       <!-- HOME -->
       <section class="home" id="home">
         <div class="home_container bd-container bd-grid">
           <div class="home_data">
             <h1 class="home_title">
               PlayStation <br />
-              <span class="home_title_2">Controller</span>
+              <span class="home_title-secondary">Controller</span>
             </h1>
             <p class="home_subtitle">
               This is a Hyper Ergonimic PLAYSTATION Controller Concept Makes
               Gaming Far More Comfortable
             </p>
-            <a href="#" class="button">About More</a>
-            <a href="#" class="button_2"
-              >Explore Produts <i class="bx bx-right-arrow-alt home_arrow"></i
-            ></a>
-            <div class="home_emp">
-              <img src="./assets/img/decoration/sony.svg" alt="" />
-              <img src="./assets/img/decoration/sony.svg" alt="" />
-              <img src="./assets/img/decoration/sony.svg" alt="" />
-              <img src="./assets/img/decoration/sony.svg" alt="" />
+            <div class="home_buttons">
+              <a href="#" class="button">About More</a>
+              <a href="#" class="button_secondary"
+                >Explore Produts
+                <i class="bx bx-right-arrow-alt button_icon"></i
+              ></a>
+            </div>
+            <div class="home_company">
+              <img src="./assets/img/decoration/sony.svg" alt="Sony Logo" />
+              <img src="./assets/img/decoration/sony.svg" alt="Sony Logo" />
+              <img src="./assets/img/decoration/sony.svg" alt="Sony Logo" />
+              <img src="./assets/img/decoration/sony.svg" alt="Sony Logo" />
             </div>
           </div>
-          <img src="./assets/img/home/controller.png" alt="" class="home_img" />
+          <img
+            src="./assets/img/home/controller.png"
+            alt="Controller PlayStation"
+            class="home_img"
+          />
         </div>
       </section>
 
@@ -136,11 +143,11 @@
           <img
             class="about_img"
             src="./assets/img/home/controller2.png"
-            alt=""
+            alt="Controllers PlayStation"
           />
           <div class="about_data">
             <h1 class="about_title">
-              Made with <span class="about_title_2">quality</span>
+              Made with <span class="about_title-secondary">quality</span>
             </h1>
             <p class="about_subtitle">
               Your PlayStation controler isn't just limited to your console,
@@ -154,7 +161,7 @@
               <li>Easy to use for any enviromment</li>
             </ul>
             <a href="#" class="button"
-              >Shop Now <i class="bx bx-right-arrow-alt home_arrow"></i
+              >Shop Now <i class="bx bx-right-arrow-alt about_icon"></i
             ></a>
           </div>
         </div>
@@ -164,37 +171,37 @@
       <section class="functions_container bd-container bd-grid">
         <div class="functions_data">
           <h1 class="functions_title">
-            Our <span class="functions_title_2">Functions</span>
+            Our <span class="functions_title-secondary">Functions</span>
           </h1>
           <p class="functions_subtitle">
             PlayStation Elite Wireless Controller Series 2
           </p>
-          <div class="functions_list_container">
+          <div class="functions_list-container">
             <div class="functions_list">
               <i class="bx bx-rocket functions_icons"></i>
-              <span class="functions_icons_title">Velocity</span>
+              <span class="functions_icons-title">Velocity</span>
               <img
                 class="functions_img"
                 src="./assets/img/decoration/description-controller.png"
-                alt=""
+                alt="Progress Bar"
               />
             </div>
             <div class="functions_list">
               <i class="bx bxs-battery-charging functions_icons"></i>
-              <span class="functions_icons_title">Durable</span>
+              <span class="functions_icons-title">Durable</span>
               <img
                 class="functions_img"
                 src="./assets/img/decoration/description-controller.png"
-                alt=""
+                alt="Progress Bar"
               />
             </div>
             <div class="functions_list">
               <i class="bx bx-bluetooth functions_icons"></i>
-              <span class="functions_icons_title">Bluetooth</span>
+              <span class="functions_icons-title">Bluetooth</span>
               <img
                 class="functions_img"
                 src="./assets/img/decoration/description-controller.png"
-                alt=""
+                alt="Progress Bar"
               />
             </div>
           </div>
@@ -205,33 +212,34 @@
       <section class="produts_container bd-container bd-grid">
         <div class="produts_data">
           <h1 class="produts_title">
-            Top controller <span class="produts_title_2">Now</span>
+            Top controller <span class="produts_title-2">Now</span>
           </h1>
           <p class="produts_subtitle">
             PlayStation Elite Wireless Controller Series 2
           </p>
-          <div class="produts_list_container">
+          <div class="produts_list-container">
             <div class="produts_list">
+              <div class="product_circle"></div>
               <img
                 class="produts_img"
                 src="./assets/img/home/joystick.png"
-                alt=""
+                alt="Joystick"
               />
-              <h2 class="produts_list_title">SNES Controller</h2>
+              <h2 class="produts_list-title">SNES Controller</h2>
               <div class="produts_evaluation">
-                <img src="./assets/img/decoration/star.png" alt="" />
-                <img src="./assets/img/decoration/star.png" alt="" />
-                <img src="./assets/img/decoration/star.png" alt="" />
-                <img src="./assets/img/decoration/star.png" alt="" />
-                <img src="./assets/img/decoration/star.png" alt="" />
-                <span class="produts_evaluation_title">(30)</span>
+                <img src="./assets/img/decoration/star.png" alt="Star" />
+                <img src="./assets/img/decoration/star.png" alt="Star" />
+                <img src="./assets/img/decoration/star.png" alt="Star" />
+                <img src="./assets/img/decoration/star.png" alt="Star" />
+                <img src="./assets/img/decoration/star.png" alt="Star" />
+                <span class="produts_evaluation-title">(30)</span>
               </div>
               <span class="produts_value">18.99 USD</span>
               <div class="produts_buy">
                 <img
-                  class="produts_buy_img"
-                  src="./assets/img/decoration/rectangle_2.svg"
-                  alt=""
+                  class="produts_buy-img"
+                  src="./assets/img/decoration/rectangle_secondary.svg"
+                  alt="Recatangle"
                 />
                 <a class="produts_button" href="/">
                   <i class="bx bx-plus"></i
@@ -239,26 +247,27 @@
               </div>
             </div>
             <div class="produts_list">
+              <div class="product_circle"></div>
               <img
                 class="produts_img"
                 src="./assets/img/home/joystick.png"
-                alt=""
+                alt="Joystick"
               />
-              <h2 class="produts_list_title">SNES Controller</h2>
+              <h2 class="produts_list-title">SNES Controller</h2>
               <div class="produts_evaluation">
-                <img src="./assets/img/decoration/star.png" alt="" />
-                <img src="./assets/img/decoration/star.png" alt="" />
-                <img src="./assets/img/decoration/star.png" alt="" />
-                <img src="./assets/img/decoration/star.png" alt="" />
-                <img src="./assets/img/decoration/star.png" alt="" />
-                <span class="produts_evaluation_title">(30)</span>
+                <img src="./assets/img/decoration/star.png" alt="Star" />
+                <img src="./assets/img/decoration/star.png" alt="Star" />
+                <img src="./assets/img/decoration/star.png" alt="Star" />
+                <img src="./assets/img/decoration/star.png" alt="Star" />
+                <img src="./assets/img/decoration/star.png" alt="Star" />
+                <span class="produts_evaluation-title">(30)</span>
               </div>
               <span class="produts_value">18.99 USD</span>
               <div class="produts_buy">
                 <img
-                  class="produts_buy_img"
-                  src="./assets/img/decoration/rectangle_2.svg"
-                  alt=""
+                  class="produts_buy-img"
+                  src="./assets/img/decoration/rectangle_secondary.svg"
+                  alt="Recatangle"
                 />
                 <a class="produts_button" href="/">
                   <i class="bx bx-plus"></i
@@ -266,26 +275,27 @@
               </div>
             </div>
             <div class="produts_list">
+              <div class="product_circle"></div>
               <img
                 class="produts_img"
                 src="./assets/img/home/joystick.png"
-                alt=""
+                alt="Joystick"
               />
-              <h2 class="produts_list_title">SNES Controller</h2>
+              <h2 class="produts_list-title">SNES Controller</h2>
               <div class="produts_evaluation">
-                <img src="./assets/img/decoration/star.png" alt="" />
-                <img src="./assets/img/decoration/star.png" alt="" />
-                <img src="./assets/img/decoration/star.png" alt="" />
-                <img src="./assets/img/decoration/star.png" alt="" />
-                <img src="./assets/img/decoration/star.png" alt="" />
-                <span class="produts_evaluation_title">(30)</span>
+                <img src="./assets/img/decoration/star.png" alt="Star" />
+                <img src="./assets/img/decoration/star.png" alt="Star" />
+                <img src="./assets/img/decoration/star.png" alt="Star" />
+                <img src="./assets/img/decoration/star.png" alt="Star" />
+                <img src="./assets/img/decoration/star.png" alt="Star" />
+                <span class="produts_evaluation-title">(30)</span>
               </div>
               <span class="produts_value">18.99 USD</span>
               <div class="produts_buy">
                 <img
-                  class="produts_buy_img"
-                  src="./assets/img/decoration/rectangle_2.svg"
-                  alt=""
+                  class="produts_buy-img"
+                  src="./assets/img/decoration/rectangle_secondary.svg"
+                  alt="Recatangle"
                 />
                 <a class="produts_button" href="/">
                   <i class="bx bx-plus"></i
@@ -301,9 +311,9 @@
           SECURELY BUY AND TRACK
         </p>
         <h2 class="faqs_title-center faqs_title container">
-          Frequenly Asked <span class="faqs_title_2">Question</span>
+          Frequenly Asked <span class="faqs_title-secondary">Question</span>
         </h2>
-        <p class="faqs_title-center faqs_subtitle_2 container">
+        <p class="faqs_title-center faqs_subtitle-secondary container">
           We know you have some questions in mind, we have tried <br />
           to list the most important ones.
         </p>
@@ -368,13 +378,13 @@
             </div>
 
             <div class="faqs_item">
-              <header class="faqs_header sombrinha">
+              <header class="faqs_header faqs_detail">
                 <h3 class="faqs_item-title">Can I pay in installments?</h3>
                 <i class="bx bx-plus faqs_icon"></i>
               </header>
 
               <div class="faqs_content">
-                <p class="faqs_description marginn">
+                <p class="faqs_description faqs_detail-secondary">
                   We accept installment payments on all credit cards. For cash
                   payments we also accept PIX and Boleto through PagSeguro.
                 </p>
@@ -384,12 +394,16 @@
         </div>
       </section>
       <!-- FOOTER -->
-      <hr class="hr_footer2" />
+      <hr class="hr_footer" />
       <footer class="footer section">
         <div class="footer_container container grid">
           <div class="footer_content">
             <a href="#" class="footer_logo">
-              <img src="assets/img/logo.svg" alt="" class="footer_logo-img" />
+              <img
+                src="assets/img/logo.svg"
+                alt="Logo PlayStation"
+                class="footer_logo-img"
+              />
               PlayStation
             </a>
 
@@ -401,21 +415,21 @@
 
             <div class="footer_social">
               <a
-                href="https://www.facebook.com/"
+                href="https://github.com/kennedybarros/"
                 target="_blank"
                 class="footer_social-link"
               >
                 <i class="bx bxl-github"></i>
               </a>
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/k3nnedybarros/"
                 target="_blank"
                 class="footer_social-link"
               >
                 <i class="bx bxl-instagram"></i>
               </a>
               <a
-                href="https://twitter.com/"
+                href="https://www.linkedin.com/in/kennedybarros/"
                 target="_blank"
                 class="footer_social-link"
               >
@@ -439,13 +453,13 @@
 
             <ul class="footer_links">
               <li>
-                <a href="#" class="footer_link">Home</a>
+                <a href="#home" class="footer_link">Home</a>
               </li>
               <li>
                 <a href="#" class="footer_link">About</a>
               </li>
               <li>
-                <a href="#" class="footer_link">FAQs</a>
+                <a href="#faqs" class="footer_link">FAQs</a>
               </li>
             </ul>
           </div>
@@ -466,7 +480,7 @@
             </ul>
           </div>
         </div>
-        <hr class="hr_footer" />
+        <hr class="hr_footer-secondary" />
         <span class="footer_copy"
           >Copyright 2022 Playstation - All Rights Rleserved</span
         >
