@@ -113,6 +113,7 @@
   transform: rotate(45deg);
 }
 
+/* MEDIAS QUERIES */
 @media screen and (max-width: 320px) {
   .faqs_container {
     grid-template-columns: 0.6fr;

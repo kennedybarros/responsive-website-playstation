@@ -29,6 +29,9 @@
 }
 
 .nav_logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-weight: var(--font-semi-bold);
   font-family: var(--tittle-font);
   color: var(--title-color);

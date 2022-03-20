@@ -1,0 +1,100 @@
+.terms_data {
+  margin-top: 2.1875rem;
+}
+
+.terms_title {
+  position: relative;
+  color: var(--title-color);
+  font-family: var(--tittle-font);
+  font-weight: var(--font-semi-bold);
+  font-size: var(--title-font-size);
+}
+
+.terms_title-secondary {
+  color: var(--primary-color);
+}
+
+.terms_subtitle {
+  margin-top: 1.875rem;
+  color: var(--paragraphy-color-light);
+  font-family: var(--paragraphy-font);
+  font-weight: var(--font-medium);
+  font-size: var(--small-font-size);
+}
+
+.terms_paragraph {
+  color: var(--paragraphy-color-light);
+  font-family: var(--paragraphy-font);
+  font-weight: var(--font-regular);
+  font-size: var(--normal-font-size);
+  line-height: 1.1875rem;
+  letter-spacing: 0.018em;
+}
+
+.terms_list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 2.1875rem;
+  margin-bottom: 3.125rem;
+  justify-content: center;
+  color: var(--paragraphy-color-light);
+  font-family: var(--paragraphy-font);
+  font-weight: var(--font-regular);
+  font-size: var(--normal-font-size);
+  line-height: 1.1875rem;
+  letter-spacing: 0.018em;
+}
+
+.terms_list li::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 3px;
+  border-radius: 0.3125rem;
+  margin-bottom: 0.25rem;
+  margin-right: 0.4375rem;
+  background-color: var(--primary-color);
+}
+
+.terms_data p:nth-child(3) {
+  margin-top: 1.5625rem;
+}
+
+.terms_data p:nth-child(4) {
+  margin-top: 1.5625rem;
+}
+
+.terms_data p:nth-child(6) {
+  margin-top: 1.875rem;
+}
+
+.terms_data p:nth-child(7) {
+  margin-top: 1.875rem;
+}
+
+/* MEDIAS QUERIES */
+@media screen and (min-width: 767px) {
+  .terms_data {
+    margin-top: 8.125rem;
+  }
+  .terms_data p:nth-child(3) {
+    margin-top: 2.5rem;
+  }
+  .terms_data p:nth-child(4) {
+    margin-top: 2.1875rem;
+  }
+  .terms_list {
+    margin-top: 2.1875rem;
+  }
+  .terms_list li::before {
+    margin-right: 0.9375rem;
+  }
+  .terms_data p:nth-child(6) {
+    margin-top: 4.375rem;
+  }
+  .terms_data p:nth-child(7) {
+    margin-top: 4.375rem;
+  }
+}
