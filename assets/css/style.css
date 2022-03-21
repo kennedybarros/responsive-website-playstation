@@ -17,3 +17,6 @@
 
 /* TERMS */
 @import './terms/terms.css';
+
+/* PRIVACY */
+@import './privacy/privacy.css';
