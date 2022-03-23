@@ -4,9 +4,12 @@
   --big-font-size: 2.5rem;
   --title-font-size: 2rem;
 
+  --icon-font-size: 1.7rem;
+
   --normalize-font-size: 1.1rem;
   --normal-font-size: 0.875rem;
   --small-font-size: 0.75rem;
+  --regularly-font-size: 1.2rem;
   --regular-font-size: 0.885rem;
 
   --font-regular: 400;
@@ -18,7 +21,9 @@
   :root {
     --big-font-size: 4rem;
     --title-font-size: 3rem;
+    --icon-font-size: 2rem;
     --normalize-font-size: 1.5rem;
+    --regularly-font-size: 1.375rem;
     --normal-font-size: 1rem;
     --small-font-size: 1rem;
     --regular-font-size: 0.9375rem;

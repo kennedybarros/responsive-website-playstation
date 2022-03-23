@@ -20,3 +20,6 @@
 
 /* PRIVACY */
 @import './privacy/privacy.css';
+
+/* CONTACT */
+@import './contato/contato.css';
