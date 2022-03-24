@@ -170,7 +170,6 @@
     grid-template-columns: 1fr;
     gap: 3.75rem;
   }
-  .ps5_controller h1 br,
   .squid_controller h1 br,
   .ps4_controller h1 br {
     display: none;
