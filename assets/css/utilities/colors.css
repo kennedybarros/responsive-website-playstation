@@ -8,12 +8,14 @@
   --body-color: #ffffff;
   --white-color: #ffffff;
   --white-color-secondary: #ececec;
+  --white-color-third: #fefefe;
   --gray-color: #cccccc;
   --gray-color-secondary: #a4a4a4;
   --gray-color-third: #5a5a5a;
   --gray-color-fourth: #9f9cb1;
   --gray-color-five: #2d2d2d;
   --gray-color-sixth: #b4b4b4;
+  --gray-color-seven: #6b6b7d;
   --background-gray: rgba(164, 164, 164, 0.05);
   --background-gray-secondary: rgba(164, 164, 164, 0.1);
   --background-gray-third: rgba(164, 164, 164, 0.15);
