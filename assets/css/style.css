@@ -26,3 +26,6 @@
 
 /* CONTROLLERS */
 @import './controllers/controllers.css';
+
+/* BUY */
+@import './buy/buy.css';
