@@ -4,7 +4,7 @@
 
 .functions_data {
   background: var(--background-gray);
-  border: 1px solid var(--gray-color);
+  border: 0.0625rem solid var(--gray-color);
   border-radius: 1.5625rem;
 }
 
@@ -41,7 +41,7 @@
   display: grid;
   padding: 1.9375rem 1.9375rem 1.9375rem 1.9375rem;
   background: var(--background-gray-secondary);
-  border: 1px solid var(--gray-color);
+  border: 0.0625rem solid var(--gray-color);
   border-radius: 1.9375rem;
   text-align: center;
 }

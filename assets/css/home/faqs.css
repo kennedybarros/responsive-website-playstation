@@ -88,11 +88,11 @@
   padding-bottom: 0.75rem;
   cursor: pointer;
   justify-content: space-between;
-  border-top: 1px solid var(--gray-color);
+  border-top: 0.0625rem solid var(--gray-color);
 }
 
 .faqs_detail {
-  border-bottom: 1px solid var(--gray-color);
+  border-bottom: 0.0625rem solid var(--gray-color);
 }
 
 .faqs_content {
@@ -138,7 +138,7 @@
 
 @media screen and (min-width: 992px) {
   .faqs_container {
-    padding: 40px 70px 40px 70px;
+    padding: 2.5rem 4.375rem 2.5rem 4.375rem;
   }
   .faqs_title::after {
     left: 57.1875rem;

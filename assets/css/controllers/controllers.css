@@ -1,17 +1,4 @@
-.background_controllers {
-  position: absolute;
-  top: 150px;
-  z-index: -1;
-}
-
-.background_controllers-2 {
-  position: absolute;
-  top: 1120px;
-  z-index: -1;
-  left: 1012px;
-}
-
-.controllers_data {
+.ps5_controller {
   margin-top: 2.1875rem;
 }
 
@@ -28,6 +15,17 @@
   line-height: 4.5rem;
   color: var(--title-color-secondary);
   position: relative;
+}
+
+.produts_produts::before {
+  content: '';
+  position: absolute;
+  width: 687.54px;
+  height: 461.99px;
+  background: url('../../img/decoration/ellipse.svg') no-repeat center;
+  top: 140px;
+  left: -35px;
+  z-index: -1;
 }
 
 .ps5_controller p {
@@ -125,6 +123,7 @@
   font-size: var(--title-font-size);
   color: var(--title-color-secondary);
   line-height: 4.5rem;
+  position: relative;
 }
 
 .squid_controller span {
@@ -155,7 +154,7 @@
 
 /* MEDIAS QUERIES */
 @media screen and (min-width: 767px) {
-  .controllers_data {
+  .ps5_controller {
     margin-top: 12.875rem;
   }
   .ps4_controller img {
@@ -215,6 +214,9 @@
   .squid_controller {
     margin-top: 15.625rem;
   }
+  .ps5_controller {
+    margin-top: 12.5rem;
+  }
   .squid_controller img {
     margin-left: -1.25rem;
   }
@@ -242,8 +244,7 @@
 }
 
 @media screen and (max-width: 1350px) {
-  .background_controllers,
-  .background_controllers-2 {
+  .produts_produts::before {
     display: none;
   }
 }

@@ -31,7 +31,7 @@
 .nav_logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.625rem;
   font-weight: var(--font-semi-bold);
   font-family: var(--tittle-font);
   color: var(--title-color);

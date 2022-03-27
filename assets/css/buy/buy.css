@@ -1,3 +1,88 @@
+.buy_product label {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  background: #1c1c1c;
+  border-radius: 0.3125rem;
+  padding: 0.8125rem 1.25rem;
+  font-family: var(--tittle-font);
+  font-weight: var(--font-regular);
+  font-size: 15px;
+  line-height: 1.375rem;
+  color: #bebebe;
+}
+
+.buy_product input:checked + label {
+  background: var(--white-color);
+  border-radius: 0.3125rem;
+  padding: 0.8125rem 1.25rem;
+  font-family: var(--tittle-font);
+  font-weight: var(--font-regular);
+  font-size: 15px;
+  line-height: 1.375rem;
+  color: #000;
+}
+
+.buy_product label::before {
+  content: '';
+  display: inline-block;
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+  border: 0.125rem solid #666666;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.buy_product label span {
+  display: none;
+}
+
+.buy_product input:checked + label span {
+  display: inline-block;
+}
+
+.buy_product input:checked + label::before {
+  border: #666666;
+  box-shadow: inset 0 0 0 1px #666666, inset 0 0 0 3.5px #666666;
+}
+
+.buy_product input {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.buy_content {
+  display: none;
+}
+
+#playstation:checked ~ #orcamento-bikcraft {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 1.875rem;
+}
+
+.buy_detail-2 {
+  display: none;
+}
+
+.buy_detail-2 li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.buy_detail-2 li img {
+  width: 16px;
+  margin-right: 0.5rem;
+}
+
+.buy_product input:checked + label + .buy_detail-2 {
+  display: grid;
+}
+
 .buy_data {
   margin-top: 2.1875rem;
 }
@@ -44,58 +129,10 @@
   text-align: center;
 }
 
-.buy_dice-input {
-  background: #1c1c1c;
-  border-radius: 0.3125rem;
-  padding: 0.8125rem 1.25rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: var(--tittle-font);
-  font-weight: var(--font-regular);
-  font-size: 15px;
-  line-height: 1.375rem;
-  color: #bebebe;
-  accent-color: #666666; /* Input color */
-}
-
-.buy_dice-input-2 {
-  background: #1c1c1c;
-  border-radius: 0.3125rem;
-  padding: 0.8125rem 1.25rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: var(--tittle-font);
-  font-weight: var(--font-regular);
-  font-size: 15px;
-  line-height: 1.375rem;
-  color: #bebebe;
-  accent-color: #666666; /* Input color */
-  margin-top: 1.25rem;
-}
-
-.buy_dice-input-3 {
-  background: #1c1c1c;
-  border-radius: 0.3125rem;
-  padding: 0.8125rem 1.25rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: var(--tittle-font);
-  font-weight: var(--font-regular);
-  font-size: 15px;
-  line-height: 1.375rem;
-  color: #bebebe;
-  accent-color: #666666; /* Input color */
-  margin-top: 1.25rem;
-}
-
 .buy_info-container {
   display: grid;
   grid-template-columns: 1fr 110px;
   background: radial-gradient(50% 50% at 50% 50%, #17152f 0%, #08052b 100%);
-  margin-top: 1.375rem;
   border-radius: 0.9375rem;
   padding: 0.8125rem 1.25rem;
 }
@@ -185,13 +222,13 @@
   flex-direction: column;
 }
 
-.form_name,
+.form_name-2,
 .form_last-name {
   display: flex;
   flex-direction: column;
 }
 
-.form_name label,
+.form_name-2 label,
 .form_last-name label {
   font-family: var(--tittle-font);
   font-weight: var(--font-semi-bold);
@@ -202,7 +239,7 @@
   margin-bottom: 0.625rem;
 }
 
-.form_name input,
+.form_name-2 input,
 .form_last-name input {
   font-family: var(--paragraphy-font);
   font-weight: var(--font-regular);
@@ -219,13 +256,13 @@
   max-width: 100%;
 }
 
-.form_name input:focus,
+.form_name-2 input:focus,
 .form_last-name input:focus {
   transition: 0.3s;
   outline: 2px solid var(--primary-color);
 }
 
-.form_name input:-webkit-autofill,
+.form_name-2 input:-webkit-autofill,
 .form_last-name input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px var(--white-color) inset;
 }
@@ -303,6 +340,7 @@
   box-sizing: border-box;
   outline: 2px solid transparent;
   border-radius: 0.3125rem;
+  max-width: 100%;
 }
 
 .form_email input:focus {
@@ -629,9 +667,8 @@
   .form_place,
   .form_cep,
   .form_number,
-  .form_email,
   .form_phone,
-  .form_name input,
+  .form_name-2 input,
   .form_last-name input {
     max-width: 177px;
   }
