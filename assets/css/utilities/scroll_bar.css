@@ -1,0 +1,10 @@
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background: #100c38;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color-hover);
+  border-radius: 0.5rem;
+}
