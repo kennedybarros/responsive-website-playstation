@@ -255,10 +255,11 @@
   box-sizing: border-box;
   outline: 2px solid transparent;
   border-radius: 0.3125rem;
+  transition: 0.3s;+
 }
 
 .form_name input:focus {
-  transition: 0.3s;
+  border: 1px solid transparent;
   outline: 2px solid var(--primary-color);
 }
 
@@ -295,11 +296,12 @@
   box-sizing: border-box;
   outline: 2px solid transparent;
   border-radius: 0.3125rem;
+  transition: 0.3s;
 }
 
 .form_email input:focus {
-  transition: 0.3s;
   outline: 2px solid var(--primary-color);
+  border: 1px solid transparent;
 }
 
 .form_email input:-webkit-autofill {
@@ -335,11 +337,12 @@
   box-sizing: border-box;
   outline: 2px solid transparent;
   border-radius: 0.3125rem;
+  transition: 0.3s;
 }
 
 .form_mensage textarea:focus {
-  transition: 0.3s;
   outline: 2px solid var(--primary-color);
+  border: 1px solid transparent;
 }
 
 .contact button {

@@ -254,11 +254,12 @@
   outline: 2px solid transparent;
   border-radius: 0.3125rem;
   max-width: 100%;
+  transition: 0.3s;
 }
 
 .form_name-2 input:focus,
 .form_last-name input:focus {
-  transition: 0.3s;
+  border: 1px solid transparent;
   outline: 2px solid var(--primary-color);
 }
 
@@ -298,11 +299,12 @@
   box-sizing: border-box;
   outline: 2px solid transparent;
   border-radius: 0.3125rem;
+  transition: 0.3s;
 }
 
 .form_cpf input:focus {
-  transition: 0.3s;
   outline: 2px solid var(--primary-color);
+  border: 1px solid transparent;
 }
 
 .form_cpf input:-webkit-autofill {
@@ -341,10 +343,10 @@
   outline: 2px solid transparent;
   border-radius: 0.3125rem;
   max-width: 100%;
+  transition: 0.3s;
 }
 
 .form_email input:focus {
-  transition: 0.3s;
   outline: 2px solid var(--primary-color);
 }
 
@@ -389,10 +391,11 @@
   box-sizing: border-box;
   outline: 2px solid transparent;
   border-radius: 0.3125rem;
+  transition: 0.3s;
 }
 
 .form_cep input:focus {
-  transition: 0.3s;
+  border: 1px solid transparent;
   outline: 2px solid var(--primary-color);
 }
 
@@ -431,10 +434,11 @@
   box-sizing: border-box;
   outline: 2px solid transparent;
   border-radius: 0.3125rem;
+  transition: 0.3s;
 }
 
 .form_number input:focus {
-  transition: 0.3s;
+  border: 1px solid transparent;
   outline: 2px solid var(--primary-color);
 }
 
@@ -473,10 +477,11 @@
   box-sizing: border-box;
   outline: 2px solid transparent;
   border-radius: 0.3125rem;
+  transition: 0.3s;
 }
 
 .form_place input:focus {
-  transition: 0.3s;
+  border: 1px solid transparent;
   outline: 2px solid var(--primary-color);
 }
 
@@ -515,10 +520,11 @@
   box-sizing: border-box;
   outline: 2px solid transparent;
   border-radius: 0.3125rem;
+  transition: 0.3s;
 }
 
 .form_neighborhood input:focus {
-  transition: 0.3s;
+  border: 1px solid transparent;
   outline: 2px solid var(--primary-color);
 }
 
@@ -557,10 +563,11 @@
   box-sizing: border-box;
   outline: 2px solid transparent;
   border-radius: 0.3125rem;
+  transition: 0.3s;
 }
 
 .form_city input:focus {
-  transition: 0.3s;
+  border: 1px solid transparent;
   outline: 2px solid var(--primary-color);
 }
 
@@ -599,11 +606,12 @@
   box-sizing: border-box;
   outline: 2px solid transparent;
   border-radius: 0.3125rem;
+  transition: 0.3s;
 }
 
 .form_state input:focus {
-  transition: 0.3s;
   outline: 2px solid var(--primary-color);
+  border: 1px solid transparent;
 }
 
 .form_state input:-webkit-autofill {
