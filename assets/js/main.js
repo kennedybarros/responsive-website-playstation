@@ -61,24 +61,19 @@ function scrollUp() {
 }
 window.addEventListener('scroll', scrollUp);
 
-/*=============== DARK LIGHT THEME ===============*/
+// Dark Mode
 const themeButton = document.getElementById('theme-button');
 const darkTheme = 'dark-theme';
 const iconTheme = 'ri-sun-line';
-
-// Previously selected topic (if user selected)
 const selectedTheme = localStorage.getItem('selected-theme');
 const selectedIcon = localStorage.getItem('selected-icon');
 
-// We obtain the current theme that the interface has by validating the dark-theme class
 const getCurrentTheme = () =>
   document.body.classList.contains(darkTheme) ? 'dark' : 'light';
 const getCurrentIcon = () =>
   themeButton.classList.contains(iconTheme) ? 'ri-moon-line' : 'ri-sun-line';
 
-// We validate if the user previously chose a topic
 if (selectedTheme) {
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
   document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](
     darkTheme
   );
@@ -87,12 +82,68 @@ if (selectedTheme) {
   );
 }
 
-// Activate / deactivate the theme manually with the button
 themeButton.addEventListener('click', () => {
-  // Add or remove the dark / icon theme
   document.body.classList.toggle(darkTheme);
   themeButton.classList.toggle(iconTheme);
-  // We save the theme and the current icon that the user chose
   localStorage.setItem('selected-theme', getCurrentTheme());
   localStorage.setItem('selected-icon', getCurrentIcon());
 });
+
+// Scroll Reveal
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2500,
+  delay: 400,
+  // reset: true
+});
+
+sr.reveal(`.home_data`);
+sr.reveal(
+  `.home_img, .ps5_controller-produts h1, .ps5_info-produts h1,
+   .ps5_info-produts p, .ps5_list-produts li, .ps5_controller-produts a,
+    .ps5_controller-produts`,
+  { delay: 500 }
+);
+sr.reveal(
+  `.about_img, .ps5_controller-div, .ps4_controller-div, .squid_controller-div`,
+  {
+    origin: 'left',
+  }
+);
+sr.reveal(
+  `.about_data, .ps5_controller img, .ps4_controller img,
+ .squid_controller img, .ps4_controller-produts img, 
+ .squid_controller-produts img`,
+  {
+    origin: 'right',
+  }
+);
+sr.reveal(`.functions_title, .functions_subtitle`, { delay: 500 });
+sr.reveal(`.functions_list`, {
+  origin: 'top',
+});
+sr.reveal(`.produts_list-container, .produts_title, .produts_subtitle`, {
+  delay: 500,
+});
+sr.reveal(`.faqs_title-center`, { delay: 500 });
+sr.reveal(`.faqs_container, .footer`, {
+  interval: 100,
+});
+sr.reveal(
+  `.terms_data, .privacy_data, .contact_data, .buy_form p, .buy_product h2,
+   .buy_product`,
+  {
+    delay: 500,
+  }
+);
+sr.reveal(
+  `.contact_dice h2, .contact_dice-subtitle, .contact_adress, .contact_office, 
+  .contact_chat, .contact_networks, .contact_form h2, .contact_form-subtitle, 
+  .form_name, .form_email, .form_mensage, .button_form, .form_state, .form_city,
+   .form_neighborhood, .form_place, .form_cep, .form_number, .form_cpf,
+    .form_name-2, .form_last-name`,
+  {
+    origin: 'top',
+  }
+);

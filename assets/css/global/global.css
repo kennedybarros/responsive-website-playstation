@@ -48,8 +48,7 @@ img {
   height: auto;
 }
 
-/*=============== THEME ===============*/
-/*========== Variables Dark theme ==========*/
+/* Dark Mode */
 body.dark-theme {
   --title-color: #fefefe;
   --title-color-secondary: #ffffff;
