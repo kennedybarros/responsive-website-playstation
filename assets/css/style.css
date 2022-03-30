@@ -36,5 +36,8 @@
 /* SCROLL UP */
 @import './utilities/scroll_up.css';
 
-/* SCROLL UP */
+/* SCROLL BAR */
 @import './utilities/scroll_bar.css';
+
+/* PRELOADER */
+@import './utilities/preloader.css';

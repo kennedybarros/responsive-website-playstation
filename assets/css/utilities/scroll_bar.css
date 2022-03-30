@@ -1,7 +1,7 @@
 /* Scroll Bar */
 ::-webkit-scrollbar {
   width: 0.6rem;
-  background: #100c38;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {

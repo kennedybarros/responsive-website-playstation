@@ -106,6 +106,11 @@
       </nav>
     </header>
 
+    <!-- PRELOADER -->
+    <section class="screen_loading flex_center flex_column">
+      <div class="loading"></div>
+    </section>
+
     <!-- MAIN -->
     <main class="main">
       <!-- HOME -->
@@ -510,6 +515,35 @@
     </a>
     <!-- SCROLL REVEAL -->
     <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- GSAP -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+      integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"
+      integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      document.addEventListener('DOMContentLoaded', () => {
+        // PRELOADER
+
+        var tl1 = gsap.timeline();
+
+        tl1.to('.screen_loading', {
+          duration: 1,
+          opacity: 0,
+          delay: 3,
+          ease: 'power4.out',
+        });
+      });
+    </script>
     <!-- JAVASCRIPT -->
     <script src="./assets/js/main.js"></script>
   </body>

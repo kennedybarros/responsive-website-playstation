@@ -131,3 +131,8 @@ body.dark-theme {
 .dark-theme .form_state label {
   color: #ffffff;
 }
+
+/* Screnn */
+.dark-theme .screen_loading {
+  background-color: #0a081e;
+}

@@ -89,6 +89,11 @@
   cursor: pointer;
   justify-content: space-between;
   border-top: 0.0625rem solid var(--gray-color);
+  transition: 0.5s;
+}
+
+.faqs_header:hover {
+  margin-left: 0.5rem;
 }
 
 .faqs_detail {

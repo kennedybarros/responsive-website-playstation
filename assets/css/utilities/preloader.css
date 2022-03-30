@@ -1,0 +1,52 @@
+.screen_loading {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  background-color: #fff;
+  position: fixed;
+  pointer-events: none;
+}
+
+.screen_loading .loading {
+  width: 200px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: rgba(183, 184, 187, 0.3);
+  position: relative;
+}
+
+.screen_loading .loading:after {
+  content: '';
+  width: 0%;
+  height: 100%;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(225deg, #2b19de 0%, #140d59 100%);
+  -webkit-animation: bar-loading 2.5s ease 0.5s forwards;
+  animation: bar-loading 2.5s ease 0.5s forwards;
+}
+
+@-webkit-keyframes bar-loading {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes bar-loading {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
