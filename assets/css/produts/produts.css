@@ -189,6 +189,11 @@
   padding: 0.5625rem 0.9375rem;
 }
 
+.PS5_img {
+  max-width: 280px;
+  margin-bottom: 20px;
+}
+
 /* Squid Controller */
 .squid_controller-produts {
   display: grid;
@@ -266,6 +271,7 @@
 }
 
 /* Medias Queries */
+
 @media screen and (min-width: 767px) {
   .ps4_controller-produts,
   .squid_controller-produts {
@@ -303,6 +309,9 @@
   }
   .squid_controller-produts img {
     margin-top: 3.125rem;
+  }
+  .PS5_img {
+    display: none;
   }
 }
 

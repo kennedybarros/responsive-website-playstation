@@ -135,8 +135,15 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1328px) {
   .home_title {
     margin-top: 7.1875rem;
+  }
+  .home_img {
+    top: 80px;
+    left: 570px;
+    position: absolute;
+    max-width: 650px;
+    display: block;
   }
 }
