@@ -3,6 +3,7 @@
   margin-left: 1rem;
   margin-right: 1rem;
   align-items: center;
+  position: relative;
   justify-content: center;
 }
 
@@ -164,7 +165,7 @@
   }
   .home_img {
     top: 80px;
-    left: 570px;
+    left: 350px;
     position: absolute;
     max-width: 650px;
     display: block;
@@ -174,5 +175,17 @@
     height: 378px;
     left: 600px;
     top: 70px;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .home_img {
+    top: 160px;
+  }
+}
+
+@media screen and (min-width: 2100px) {
+  .home_img {
+    top: 200px;
   }
 }

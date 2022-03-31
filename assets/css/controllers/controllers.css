@@ -248,3 +248,9 @@
     display: none;
   }
 }
+
+@media screen and (min-width: 1400px) {
+  .produts_produts::before {
+    display: none;
+  }
+}

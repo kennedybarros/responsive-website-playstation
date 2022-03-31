@@ -3,8 +3,8 @@
 </h1>
 
 <div align="center">
-    <img src="https://img.shields.io/github/repo-size/kennedybarros/repsonsive-website-playstation?color=B08968" />
-    <img src="https://img.shields.io/github/license/kennedybarros/repsonsive-website-playstation?color=B08968"/>
+    <img src="https://img.shields.io/github/repo-size/kennedybarros/repsonsive-website-playstation?color=362BA9" />
+    <img src="https://img.shields.io/github/license/kennedybarros/repsonsive-website-playstation?color=362BA9"/>
 </div>
 
 <h1 align="center">
