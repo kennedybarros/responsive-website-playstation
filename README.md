@@ -26,6 +26,7 @@
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [ScrollReveal](https://scrollrevealjs.org/)
 - [GSAP](https://greensock.com/gsap/)
+- [FORMSUBMIT](https://formsubmit.co/)
 
 ---
 

@@ -132,7 +132,7 @@ sr.reveal(`.faqs_container, .footer`, {
 });
 sr.reveal(
   `.terms_data, .privacy_data, .contact_data, .buy_form p, .buy_product h2,
-   .buy_product, .email_data`,
+   .buy_product, .email_data, .hr_footer, .hr_footer-secondary`,
   {
     delay: 500,
   }
