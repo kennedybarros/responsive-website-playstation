@@ -147,3 +147,17 @@ sr.reveal(
     origin: 'top',
   }
 );
+
+// Activate Budget Items
+
+const parameters = new URLSearchParams(location.search);
+
+function activateProduct(parameter) {
+  const elemento = document.getElementById(parameter);
+  if (elemento) {
+    elemento.checked = true;
+  }
+  console.log(elemento);
+}
+
+parameters.forEach(activateProduct);
