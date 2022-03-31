@@ -1,0 +1,42 @@
+.email_data {
+  margin-top: 2.1875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email_img {
+  max-width: 160px;
+}
+
+.email_title {
+  color: var(--title-color);
+  font-family: var(--tittle-font);
+  font-weight: var(--font-semi-bold);
+  font-size: var(--title-font-size);
+  margin-top: 20px;
+}
+
+.email_title-secondary {
+  color: var(--primary-color);
+}
+
+.email_subtitle {
+  margin-top: 1.875rem;
+  font-family: var(--paragraphy-font);
+  font-weight: var(--font-medium);
+  font-size: var(--normal-font-size);
+  color: var(--paragraphy-color-light);
+}
+
+/* MEDIAS QUERIES */
+@media screen and (min-width: 766px) {
+  .email_data {
+    margin-top: 8.125rem;
+  }
+  .email_img {
+    max-width: initial;
+  }
+}
+@media screen and (min-width: 1020px) {
+}

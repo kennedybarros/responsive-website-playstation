@@ -41,3 +41,6 @@
 
 /* PRELOADER */
 @import './utilities/preloader.css';
+
+/* EMAIL */
+@import './email/email.css';
