@@ -52,6 +52,23 @@
   position: relative;
 }
 
+.ps5_list::after {
+  content: '';
+  position: absolute;
+  width: 270px;
+  height: 410px;
+  top: -10px;
+  left: -10px;
+  background: radial-gradient(
+    53.9% 53.9% at 77.01% 30.21%,
+    #d6d6d6 0%,
+    #d8d7d7 100%
+  );
+  opacity: 0.35;
+  filter: blur(150px);
+  z-index: -1;
+}
+
 .produts_img {
   position: relative;
   max-width: 180px;

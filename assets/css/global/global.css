@@ -136,3 +136,15 @@ body.dark-theme {
 .dark-theme .screen_loading {
   background-color: #0a081e;
 }
+
+/* Blur */
+.dark-theme .home_title::after,
+.dark-theme .about_title::after,
+.dark-theme .faqs_item-title::before,
+.dark-theme .ps5_list::after {
+  background: radial-gradient(
+    53.9% 53.9% at 77.01% 30.21%,
+    #2314b5 0%,
+    #140d59 100%
+  );
+}

@@ -47,6 +47,11 @@
   color: var(--gray-color-seven);
 }
 
+.ps4_list-produts li {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
 .ps4_list-produts li::before {
   content: '';
   display: inline-block;
@@ -56,6 +61,10 @@
   background-color: var(--primary-color);
   margin-bottom: 0.25rem;
   margin-right: 0.625rem;
+}
+
+.ps4_list-produts li:hover {
+  margin-left: 8px;
 }
 
 .ps4_controller-produts a {
@@ -167,6 +176,11 @@
   color: #c5c4f0;
 }
 
+.ps5_list-produts li {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
 .ps5_list-produts li::before {
   content: '';
   display: inline-block;
@@ -176,6 +190,10 @@
   margin-bottom: 0.25rem;
   margin-right: 0.625rem;
   background: var(--white-color);
+}
+
+.ps5_list-produts li:hover {
+  margin-left: 8px;
 }
 
 .ps5_controller-produts a {
@@ -231,6 +249,8 @@
   line-height: 1.1875rem;
   margin-bottom: 0.625rem;
   color: var(--gray-color-seven);
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .squid_list-produts li::before {
@@ -242,6 +262,10 @@
   margin-bottom: 0.25rem;
   margin-right: 0.625rem;
   background-color: var(--primary-color);
+}
+
+.squid_list-produts li:hover {
+  margin-left: 8px;
 }
 
 .squid_controller-produts a {

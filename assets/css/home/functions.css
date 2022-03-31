@@ -6,6 +6,24 @@
   background: var(--background-gray);
   border: 0.0625rem solid var(--gray-color);
   border-radius: 1.5625rem;
+  position: relative;
+}
+
+.functions_data::after {
+  content: '';
+  position: absolute;
+  width: 960px;
+  height: 950px;
+  top: 20px;
+  left: -100px;
+  background: radial-gradient(
+    53.9% 53.9% at 77.01% 30.21%,
+    #2314b5 0%,
+    #140d59 100%
+  );
+  opacity: 0.2;
+  filter: blur(250px);
+  z-index: -1;
 }
 
 .functions_title {
@@ -89,5 +107,8 @@
 @media screen and (min-width: 992px) {
   .functions_list-container {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .functions_data::after {
+    height: 650px;
   }
 }

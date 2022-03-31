@@ -100,6 +100,7 @@
   margin-top: 6.25rem;
   margin-bottom: -3.125rem;
   border: 1px solid #cccccc;
+  position: relative;
 }
 
 .hr_footer-secondary {
