@@ -58,24 +58,6 @@
   font-weight: var(--font-semi-bold);
   font-size: var(--small-font-size);
   color: var(--gray-color-third);
-  position: relative;
-}
-
-.faqs_item-title::before {
-  content: '';
-  position: absolute;
-  width: 158px;
-  height: 158px;
-  top: -410px;
-  left: -390px;
-  background: radial-gradient(
-    53.9% 53.9% at 77.01% 30.21%,
-    #d6d6d6 0%,
-    #d8d7d7 100%
-  );
-  opacity: 0.35;
-  filter: blur(150px);
-  z-index: -1;
 }
 
 .faqs_icon {
