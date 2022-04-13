@@ -20,7 +20,7 @@
   position: absolute;
   width: 180px;
   height: 180px;
-  background: url('../../img/decoration/x.svg') no-repeat;
+  background: url('../../svg/decoration/x.svg') no-repeat;
   left: 270px;
   top: -5rem;
   z-index: -1;

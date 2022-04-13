@@ -63,7 +63,7 @@
   column-gap: 1rem;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 790px) {
   .nav_menu {
     position: fixed;
     background-color: var(--body-color);
@@ -109,7 +109,7 @@
 }
 
 /* MEDIA QUERIES */
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 790px) {
   .nav {
     height: calc(var(--header-height) + 1.5rem);
     column-gap: 6.25rem;

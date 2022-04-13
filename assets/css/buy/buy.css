@@ -8,7 +8,7 @@
   padding: 0.8125rem 1.25rem;
   font-family: var(--tittle-font);
   font-weight: var(--font-regular);
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 1.375rem;
   color: #bebebe;
 }
@@ -21,7 +21,7 @@
   font-weight: var(--font-regular);
   font-size: 15px;
   line-height: 1.375rem;
-  color: #000;
+  color: var(--black-color);
 }
 
 .buy_product label::before {
@@ -151,7 +151,7 @@
 .buy_detail-title {
   font-family: var(--tittle-font);
   font-weight: var(--font-semi-bold);
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.3125rem;
   letter-spacing: 0.013em;
   margin-bottom: 0.75rem;
@@ -167,7 +167,7 @@
   padding-left: 0.3125rem;
   font-family: var(--paragraphy-font);
   font-weight: var(--font-regular);
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 0.875rem;
   letter-spacing: 0.013em;
   color: var(--gray-color-fourth);
@@ -177,7 +177,7 @@
 .buy_detail-paragraph {
   font-family: var(--tittle-font);
   font-weight: var(--font-regular);
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1.125rem;
   margin-top: 0.9375rem;
   margin-bottom: 0.9375rem;
@@ -201,17 +201,16 @@
 .buy_form p {
   font-family: var(--tittle-font);
   font-weight: var(--font-medium);
-  font-size: 19px;
+  font-size: 1.1875rem;
   line-height: 1.75rem;
   color: var(--title-color-secondary);
 }
 .form_text-2 {
   margin-top: 1.875rem;
   font-family: var(--tittle-font);
-  font-style: normal;
   font-weight: var(--font-medium);
-  font-size: 19px;
-  line-height: 28px;
+  font-size: 1.1875rem;
+  line-height: 1.75rem;
   color: var(--title-color-secondary);
 }
 

@@ -82,18 +82,14 @@
   .terms_data p:nth-child(3) {
     margin-top: 2.5rem;
   }
-  .terms_data p:nth-child(4) {
-    margin-top: 2.1875rem;
-  }
+  .terms_data p:nth-child(4),
   .terms_list {
     margin-top: 2.1875rem;
   }
   .terms_list li::before {
     margin-right: 0.9375rem;
   }
-  .terms_data p:nth-child(6) {
-    margin-top: 4.375rem;
-  }
+  .terms_data p:nth-child(6),
   .terms_data p:nth-child(7) {
     margin-top: 4.375rem;
   }

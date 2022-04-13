@@ -1,8 +1,8 @@
 .home_container {
   align-content: center;
+  align-items: center;
   margin-left: 1rem;
   margin-right: 1rem;
-  align-items: center;
   position: relative;
   justify-content: center;
 }
@@ -21,7 +21,7 @@
   position: absolute;
   width: 144px;
   height: 144px;
-  background: url('../../img/decoration/circle.svg') no-repeat;
+  background: url('../../svg/decoration/circle.svg') no-repeat;
   top: -1.5625rem;
   left: -4.375rem;
   z-index: -1;
@@ -178,13 +178,13 @@
   }
 }
 
-@media screen and (min-width: 1700px) {
+@media screen and (min-width: 1800px) {
   .home_img {
-    top: 160px;
+    top: 150px;
   }
 }
 
-@media screen and (min-width: 2100px) {
+@media screen and (min-width: 2000px) {
   .home_img {
     top: 200px;
   }

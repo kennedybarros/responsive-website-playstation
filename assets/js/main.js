@@ -53,7 +53,7 @@ const toggleItem = (item) => {
   }
 };
 
-// Scroll Up
+// SCROLL UP
 function scrollUp() {
   const scrollUp = document.getElementById('scroll-up');
   if (this.scrollY >= 460) scrollUp.classList.add('show-scroll');
@@ -61,7 +61,7 @@ function scrollUp() {
 }
 window.addEventListener('scroll', scrollUp);
 
-// Dark Mode
+// DARK MODE
 const themeButton = document.getElementById('theme-button');
 const darkTheme = 'dark-theme';
 const iconTheme = 'ri-sun-line';
@@ -89,7 +89,7 @@ themeButton.addEventListener('click', () => {
   localStorage.setItem('selected-icon', getCurrentIcon());
 });
 
-// Scroll Reveal
+// SCROLL REVEAL
 const sr = ScrollReveal({
   origin: 'top',
   distance: '60px',

@@ -22,7 +22,7 @@
   position: absolute;
   width: 687.54px;
   height: 461.99px;
-  background: url('../../img/decoration/ellipse.svg') no-repeat center;
+  background: url('../../svg/decoration/ellipse.svg') no-repeat center;
   top: 140px;
   left: -35px;
   z-index: -1;
@@ -231,12 +231,10 @@
   .squid_controller p {
     margin-top: 1.875rem;
   }
-  .ps5_controller a {
-    margin-top: 2.5rem;
-  }
+  .ps5_controller a,
   .ps4_controller p,
   .squid_controller p {
-    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
   }
   .squid_controller div:last-child {
     justify-self: self-end;
@@ -252,5 +250,11 @@
 @media screen and (min-width: 1400px) {
   .produts_produts::before {
     display: none;
+  }
+  .ps5_controller h1 {
+    color: #0e0e0e;
+  }
+  .ps5_controller p {
+    color: #8d8ea0;
   }
 }

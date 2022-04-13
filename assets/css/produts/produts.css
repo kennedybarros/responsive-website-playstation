@@ -67,6 +67,10 @@
   margin-left: 8px;
 }
 
+.produts_button {
+  cursor: none;
+}
+
 .ps4_controller-produts a {
   display: inline-block;
   background: var(--primary-color);
@@ -110,7 +114,7 @@
   position: absolute;
   width: 634px;
   height: 417px;
-  background: url('../../img/decoration/controller-produts-2.png') no-repeat
+  background: url('../../img/decoration/controller-produts-2.webp') no-repeat
     center;
   top: 120px;
   left: -160px;
@@ -124,7 +128,7 @@
   position: absolute;
   width: 634px;
   height: 417px;
-  background: url('../../img/decoration/controller-produts-3.png') no-repeat
+  background: url('../../img/decoration/controller-produts-3.webp') no-repeat
     center;
   top: 120px;
   right: -150px;
@@ -137,7 +141,7 @@
   position: absolute;
   width: 1200px;
   height: 550px;
-  background: url('../../img/decoration/border-produts.png') no-repeat center;
+  background: url('../../img/decoration/border-produts.webp') no-repeat center;
   top: -75px;
   left: -390px;
 }
@@ -322,9 +326,7 @@
     display: inline-block;
   }
   .ps5_controller-produts::before,
-  .ps5_controller-produts::after {
-    max-width: 400px;
-  }
+  .ps5_controller-produts::after,
   .ps4_controller-produts img {
     max-width: 400px;
   }
@@ -336,6 +338,9 @@
   }
   .PS5_img {
     display: none;
+  }
+  .produts_button {
+    cursor: pointer;
   }
 }
 
@@ -361,5 +366,8 @@
   .ps5_controller-produts::before,
   .ps5_controller-produts::after {
     max-width: 100%;
+  }
+  .produts_button {
+    cursor: pointer;
   }
 }
